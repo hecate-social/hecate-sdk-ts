@@ -1,0 +1,44 @@
+{
+  "name": "@hecate-social/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for Hecate plugin frontends",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./bit-flags": {
+      "types": "./dist/bit-flags.d.ts",
+      "import": "./dist/bit-flags.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.1"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hecate-social/hecate-sdk-ts.git"
+  },
+  "keywords": [
+    "hecate",
+    "plugin",
+    "sdk",
+    "bit-flags",
+    "event-sourcing"
+  ]
+}
