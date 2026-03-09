@@ -1,0 +1,2 @@
+export { type Flags, type Flag, type FlagMap, set, unset, setAll, unsetAll, has, hasNot, hasAll, hasAny, toList, toString, decompose, highest, lowest, } from "./bit-flags.js";
+//# sourceMappingURL=index.d.ts.map
